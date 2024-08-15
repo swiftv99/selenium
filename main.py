@@ -27,6 +27,7 @@ time.sleep(2)
 # Verify new page URL contains practicetestautomation.com/logged-in-successfully/
 actual_url = driver.current_url
 assert actual_url == "practicetestautomation.com/logged-in-successfully/"
+
 # Verify new page contains expected text ('Congratulations' or 'successfully logged in')
 text_locator = driver.find_element(By.TAG_NAME, "h1")
 actual_text = text_locator.text
