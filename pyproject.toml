@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "selenium-webui"
+version = "0.1.0"
+description = ""
+authors = ["Abdulaziz Musaev <abdulaziz.musaev@iav.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.23.1"
+pytest = "^8.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

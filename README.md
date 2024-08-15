@@ -1,1 +1,1 @@
-# selenium
+pytest -m [math | login | positive | negative]
