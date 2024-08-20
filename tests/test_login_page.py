@@ -3,7 +3,6 @@ import pytest
 from page_objects.login_page import LoginPage
 from page_objects.logged_in_successfully import LoggedInSuccessfully
 
-
 class TestPositiveScenarios:
     @pytest.mark.login
     @pytest.mark.positive
