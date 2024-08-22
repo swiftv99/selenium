@@ -11,13 +11,14 @@ class LoginPage(BasePage):
     __username_field = (By.ID, "username")
     __password_field = (By.NAME, "password")
     __submit_button = (By.XPATH, "//button[@class='btn']")
+    __error_message = (By.ID, "error")
 
     def __init__(self, driver: WebDriver):
         # self._driver = driver
         super().__init__(driver)
     
     def open(self):
-        # self._driver.get(url)
+        # self._driver.get(self.__url)
         super()._open_url(self.__url)
         
     def execute_login(self, username: str, password: str):
@@ -32,3 +33,6 @@ class LoginPage(BasePage):
         # self._driver.find_element(self.__password_field).send_keys(password)
         # wait.until(ec.visibility_of_element_located(self.__submit_button))
         # self._driver.find_element(self.__submit_button).click()
+        
+    def get_error_message(self) -> str:
+        return super()._get_text(self.__error_message, time=3)

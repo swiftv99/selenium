@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from page_objects.base_page import BasePage
 
 
-class LoggedInSuccessfully(BasePage):
+class LoggedInSuccessfullyPage(BasePage):
     __url = "https://practicetestautomation.com/logged-in-successfully/"
     __header_locator = (By.TAG_NAME, "h1")
     __logout_button_locator = (By.LINK_TEXT, "Log out")
